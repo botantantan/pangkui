@@ -1,0 +1,133 @@
+1)Write a program, input a string, reverse the string, and output the reversed string.
+Input format:
+Enter a non-empty string that does not exceed 80 characters in length and ends with a carriage return on a line.
+Output format:
+Output the reversed string in one line.
+Input sample:
+Hello World!
+Sample output:
+!dlroW olleH
+
+
+2)Write a program to find a specified character in a given string.
+Input format:
+Enter a character to be found on the first line.
+Enter a non-empty string (not more than 80 characters) ending with a carriage return on the second line.
+Output format:
+If found, output the maximum subscript corresponding to the character in the string in the format "index=subscript" in one line (subscript starts from 0); otherwise, output "Not Found".
+Input example 1:
+m
+programming
+Output sample 1:
+index = 7
+Input example 2:
+a
+1234
+Output sample 2:
+Not Found
+
+
+3) Write a program, enter a string, and then enter two characters, and find the index of these two characters in the string.
+Input format:
+Input string on the first line
+Enter two characters on the second line, separated by spaces.
+Output format:
+The character and index are output in reverse, that is, the last one is output first. One per line.
+Input sample:
+mississippi
+s p
+Input sample:
+9 p
+8 p
+6 s
+5 s
+3 s
+2 s
+
+
+4) Write a program to extract all the numeric characters ('0'……'9') in a string and convert it to an integer output.
+Input format:
+Enter a string that does not exceed 80 characters and ends with a carriage return on one line.
+Output format:
+Output the converted integer in one line. The title guarantees that the output does not exceed the long integer range.
+Input sample:
+free82jeep5
+Sample output:
+825
+
+5)Write a program, input a string ending with #, filter out all non-hexadecimal characters (not case sensitive), form a new string, and then convert it to a decimal number and output it. If the character "-" exists before the first hexadecimal character, it means that the number is negative.
+Input format:
+Input gives a non-empty string ending with # in one line.
+Output format:
+Output the converted decimal number in one line. The problem is guaranteed to be output within the long integer range.
+Input sample:
++-P-xf4+-1!#
+Sample output:
+-3905
+
+6)Write a program to count the number of uppercase consonants in a given string. English consonants are letters other than A, E, I, O, and U.
+Input format:
+Enter a string that does not exceed 80 characters and ends with a carriage return on one line.
+Output format:
+The output gives the number of uppercase consonants in the string in one line.
+Input sample:
+HELLO World!
+Sample output:
+4
+
+
+7)Write a program, read in 5 character strings, and output them in ascending order.
+Input format:
+The input is 5 non-empty strings separated by spaces. Each string does not include blank characters such as spaces, tabs, and newlines, and the length is less than 80.
+Output format:
+Output the sorted results in the following format:
+After sorted:
+One string per line
+Input sample:
+red yellow blue green white
+Sample output:
+After sorted:
+blue
+green
+red
+white
+yellow
+
+
+8)Write a program to count the number of words in a line of characters. The so-called "word" refers to a string without spaces in a row. Each word is separated by a space, and the number of spaces can be multiple.
+Input format:
+Input gives a line of characters.
+Output format:
+Output the number of words in a line.
+Input sample:
+Let's go to room 209.
+Sample output:
+5
+
+9)A legal ID number is composed of 17-digit area, date number and sequence number plus a check code.
+The calculation rules of the check code are as follows:
+First, the first 17 digits are weighted and summed, and the weight distribution is: {7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2};
+Then the calculated sum is modulo 11 to get the value Z; finally, the Z value and the value of the check code M are corresponding to the following relationship:
+Z: 0 1 2 3 4 5 6 7 8 9 10
+M: 1 0 X 9 8 7 6 5 4 3 2
+Now given some ID numbers, please verify the validity of the verification code and output the number in question.
+Input format:
+Enter the first line to give a positive integer N (≤100) is the number of ID numbers entered. Next N lines, each line gives an 18-digit ID number.
+Output format:
+Output 1 problematic ID number per line in the order of input. This does not check whether the first 17 digits are reasonable, but only checks whether the first 17 digits are all numbers and the check code of the last digit is calculated accurately. If all numbers are normal, All passed is output.
+Input example 1:
+4
+320124198808240056
+12010X198901011234
+110108196711301866
+37070419881216001X
+Output sample 1:
+12010X198901011234
+110108196711301866
+37070419881216001X
+Input example 2:
+2
+320124198808240056
+110108196711301862
+Output sample 2:
+All passed
