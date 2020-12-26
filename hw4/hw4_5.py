@@ -34,7 +34,10 @@ s_fil2 = filter(filterFunc2, s_temp)
 for c in s_fil2:
   s_out += c
 
-if (flag):
-  print(int(s_out, 16)*-1)
+if (s_out == ""):
+  print("0")
 else:
-  print(int(s_out, 16))
+  if (flag):
+    print(int(s_out, 16)*-1)
+  else:
+    print(int(s_out, 16))

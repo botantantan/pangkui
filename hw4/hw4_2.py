@@ -11,7 +11,7 @@ Output sample 2:
 Not Found
 """
 
-c = input("\r")
+c = input()
 s = input()
 
 index = -1
@@ -22,4 +22,4 @@ for i in range(len(s)):
 if (index == -1):
   print("Not Found")
 else:
-  print("index = {}".format(index))
+  print("index={}".format(index))

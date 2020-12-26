@@ -14,6 +14,6 @@ s = input()
 
 s = s.split()
 s.sort()
-
+print("After sorted:")
 for word in s:
   print(word)
