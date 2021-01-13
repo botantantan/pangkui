@@ -1,0 +1,190 @@
+1)Elementary and middle school students must have a physical examination every semester, and their height should be measured, because height can reflect the growth of their children. Now that the height of a class has been measured, please output the heights that exceed the average height. The input of the program is a line of data separated by spaces, and each data is a positive integer. The program needs to output those input values that exceed the average number of the input positive integers, with a space after each number, and the output order is the same as the input.
+Input format:
+Enter the height value of a class in one line, separated by spaces.
+Output format:
+Output the input values that exceed the average number of inputs on one line, separated by spaces.
+Input sample:
+143 174 119 127 117 164 110 128
+Sample output:
+143 174 164
+
+2)Count the most frequent integers and their number of occurrences in an integer sequence.
+Input format:
+Enter the number of integers N (0<N≤100) in the sequence and N integers in one line. The numbers are separated by spaces.
+Output format:
+Output the integer with the most occurrences and the number of occurrences in one line, separated by spaces. The title guarantees that such a number is unique.
+Input sample:
+10 3 2 -1 5 3 4 3 0 3 2
+Sample output:
+3 4
+Test data: sample is equivalent, with negative numbers; max is updated multiple times in statistics; all elements are the same; minimum N
+
+3)Find the maximum value of the given n numbers and its corresponding minimum subscript (subscript starts from 0).
+Input format:
+Enter a positive integer n (1<n≤10) in the first line. Enter n integers on the second line, separated by spaces.
+Output format:
+Output the maximum value and the minimum subscript of the maximum value in one line, separated by a space.
+Input sample:
+6
+2 8 10 1 9 10
+Sample output:
+10 2
+Test data: sample is equivalent, with parallel output minimum subscript; maximum n, multiple parallel, output 0; minimum n, no parallel negative number 
+
+4)After removing the repeated characters from the given string, the output is sorted from smallest to largest according to the ASCII code order of the characters.
+Input format:
+The input is a non-empty string (less than 80 characters) ending with a carriage return.
+Output format:
+Output the result string after reordering.
+Input sample:
+ad2f3adjfeainzzzv
+Sample output:
+23adefijnvz
+Test data: sample equivalent, numbers and letters, no spaces; there are other characters, including spaces; the longest string, all spaces; the shortest string, the last visible character
+
+5)Input a string str, and then input the character c to be deleted, case is not distinguished, delete all the characters c appearing in the string str.
+Input format:
+Enter a line of characters in the first line Enter the character to be deleted in the second line
+Output format:
+Output the deleted string in one line
+Input sample:
+Here is a set of inputs. E.g:
+Bee
+E
+Sample output:
+The corresponding output is given here. E.g:
+result: B
+Test data: sample is equivalent, there are any spaces around the string and characters, upper and lower case; the upper and lower case of characters are both in the string; the string is a combination of upper and lower case characters
+
+6)Enter a character string and select the 10 unique English letters on the left (not case sensitive). If there are no 10 English letters, the message "not found" is displayed
+Input format:
+Enter a string in one line
+Output format:
+Output the leftmost 10 unique English letters or display the message "not found" in one line
+Input example 1:
+Here is a set of inputs. E.g:
+poemp134
+Output sample 1:
+The corresponding output is given here. E.g:
+not found
+Input example 2
+Here is a set of inputs. E.g:
+This is a test example
+Output sample 2:
+The corresponding output is given here. E.g:
+Thisaexmpl
+Test data: sample1 is equivalent, the selection result does not have 10 English letters; sample2 is equivalent, a string composed of English letters and spaces; a string composed of English letters and spaces, but the selection result does not have 10 English letters; there are other characters and Repeat English letters, but less than 10; a string of arbitrary characters
+
+7)Enter a string to determine whether the string is a palindrome. A palindrome is the center of the string is symmetrical, and the content read from left to right is the same as that read from right to left.
+Input format:
+Enter a non-empty string that does not exceed 80 characters in length and ends with a carriage return on one line.
+Output format:
+The output string is output in line 1. If it is a palindrome string, output Yes in line 2, otherwise output No.
+Input example 1:
+level
+Output sample 1:
+level
+Yes
+Input example 2:
+1 + 2 = 2 + 1 =
+Output sample 2:
+1 + 2 = 2 + 1 =
+No
+Test data: sample 1 is equivalent; sample 2 is equivalent, with spaces; sample 2 is equivalent, the longest string; the shortest string
+
+8)A legal ID number is composed of 17-digit area, date number and sequence number plus a check code. The calculation rules of the check code are as follows:
+First, the first 17 digits are weighted and summed, and the weight distribution is: {7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2}; Then the calculated sum is modulo 11 to get the value Z; finally, the value of Z and the value of the check code M are corresponding to the following relationship:
+Z: 0 1 2 3 4 5 6 7 8 9 10
+M: 1 0 X 9 8 7 6 5 4 3 2
+Now given some ID numbers, please verify the validity of the verification code and output the number in question.
+Input format:
+Enter the first line to give a positive integer N (≤100) is the number of ID numbers entered. Next N lines, each line gives an 18-digit ID number.
+Output format:
+Output 1 problematic ID number per line in the order of input. It is not checked whether the first 17 digits are reasonable, but only whether the first 17 digits are all numbers and the check code of the last digit is calculated accurately. If all numbers are normal, All passed is output.
+Input example 1:
+4
+320124198808240056
+12010X198901011234
+110108196711301866
+37070419881216001X
+Output sample 1:
+12010X198901011234
+110108196711301866
+37070419881216001X
+Input example 2:
+2
+320124198808240056
+110108196711301862
+Output sample 2:
+All passed
+Test data: sample1 is equivalent, there are characters that are not in the range, there are completely wrong calculations, whether the mapping is finally taken; sample2 is equivalent; N=100, including all 11 mappings; the smallest N, the verification can pass, but there are non-digits character
+
+9)Output the uppercase English letters that have appeared in the given string in order, and output each letter only once; if there are no uppercase English letters, output "Not Found".
+Input format:
+Enter as a string (less than 80 characters) ending with a carriage return.
+Output format:
+The uppercase English letters that have appeared in one line are output in the order of input, and each letter is output only once. If there is no uppercase English letter, output "Not Found".
+Input example 1:
+FONTNAME and FILENAME
+Output sample 1:
+FONTAMEIL
+Input example 2:
+fontname and filrname
+Output sample 2:
+Not Found
+Test data: sample1 is equivalent, with uppercase and lowercase and spaces, repeated letters; sample2 is equivalent, all lowercase and spaces; 79 uppercase, lowercase, spaces, numbers, special characters; all uppercase, all 26 letters are repeated
+
+10)If one character string is a rearrangement combination of another character string, then the two character strings are anagrams for each other. For example, "heart" and "earth" are conjugates of each other, and "Mary" and "arMy" are also conjugates of each other.
+Input format:
+Enter the first string on the first line and the second string on the second line.
+Output format:
+Output "yes", which means it is an interchangeable word, and output "no", which means it is not an interchangeable word.
+Input example 1:
+Here is a set of inputs. E.g:
+Mary
+arMy
+Output sample 1:
+The corresponding output is given here. E.g:
+yes
+Input example 2:
+Here is a set of inputs. E.g:
+hello 114
+114 hello
+Output sample 2:
+The corresponding output is given here. E.g:
+yes
+Input example 3:
+Here is a set of inputs. E.g:
+Wellcom
+mocllew
+Sample output 3:
+The corresponding output is given here. E.g:
+no
+Test data: sample1 is equivalent, with uppercase and lowercase letters; sample2 is equivalent, with lowercase letters, spaces and numbers; sample3 is equivalent, with inconsistent uppercase and lowercase; the letters that make up a word are the same, but the number is different; the same string
+
+11)Enter a line of character string, and then process it as follows.
+Input format:
+The elements in the string are separated by spaces or multiple spaces.
+Output format:
+Output all elements in the string in reverse order.
+Then output the original list.
+Then output each element of the original list in reverse order, separated by 1 space. Note: There can be no spaces after the last element.
+Input sample:
+a b c e f gh
+Sample output:
+ghfecba
+['a','b','c','e','f','gh']
+gh f e c b a
+
+12)Read in two integers a and b, and output the sum of the product of each corresponding bit of absolute value a and absolute value b. For example, a=1234, b=608, the output value is: "1×0+2×6+3× The value of 0+4×8" is 44.
+Input format:
+Enter two numbers in a row
+Output format:
+Output the sum of corresponding bit products in a row
+Input sample:
+Here is a set of inputs. E.g:
+1234 608
+Sample output:
+The corresponding output is given here. E.g:
+44
+Test data: sample1 is equivalent, all are positive integers, with different digits; the first number is negative, with many digits; the second number is negative, with many digits

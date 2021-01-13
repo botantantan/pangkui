@@ -1,0 +1,90 @@
+1)Enter a number from 1 to 7, and output the abbreviation of the corresponding weekday name.
+1 Mon
+2 Tue
+3 Wed
+4 Thu
+5 Fri
+6 Sat
+7 Sun
+Input format:
+Enter a number between 1 and 7
+Output format:
+Output the abbreviation of the corresponding week name
+Input sample:
+Here is a set of inputs. E.g:
+  1
+Sample output:
+The corresponding output is given here. E.g:
+Mon
+
+2)Dictionary representation of the graph. Input a multi-line string, each line represents the edge and length of a vertex and the vertex, and output the number of vertices, the number of edges, and the total length of the edges. For example, the point 0 in the above figure means: {'O':{'A':2,'B':5,'C':4}}. Use the eval function to process the input, see Chapter 2 for the specific usage of the eval function.
+Input format:
+The first line represents the number of input lines. Each input line below represents a vertex and a string of the length of the edge connected to the vertex.
+Output format:
+Output the number of vertices, the number of edges, and the total length of the edges in one line
+Input sample:
+Here is a set of inputs. E.g:
+4
+{'a':{'b':10,'c':6}}
+{'b':{'c':2,'d':7}}
+{'c':{'d':10}}
+{'d':{}}
+Sample output:
+The corresponding output is given here. E.g:
+4 5 35
+
+3)Use sets to analyze the voting situation of the event. The first team has five players, numbered 1, 2, 3, 4, and 5; the second team also has five players, numbered 6, 7, 8, 9, 10. Enter a string of votes to ask for the members of the second team who did not get votes
+Input format:
+Enter the serial numbers of the players who received the votes in one line, separated by commas.
+Output format:
+In a row, the serial numbers of the players from the second team who have not won votes are output from small to large. Note that there is no space after the last serial number.
+Input sample:
+Here is a set of inputs. E.g:
+  1,5,9,3,9,1,1,7,5,7,7,3,3,1,5,7,4,4,5,4,9,5,10,9
+Sample output:
+The corresponding output is given here. E.g:
+6 8
+
+4)Given the length of service of N employees in a company, it is required to output the number of employees in each length of service in increasing order of service age.
+Input format:
+The input first gives a positive integer N (≤105), that is, the total number of employees; then gives N integers, that is, the length of service of each employee, in the range [0, 50].
+Output format:
+Output the number of employees of each service age in increasing order of service age, the format is: "service age: number of people". Each item occupies one line. If the number of people is 0, the item is not output.
+Input sample:
+8
+10 2 0 5 7 2 5 2
+Sample output:
+0:1
+2:3
+5:2
+7:1
+10:1
+Test data: sample is equivalent; service age is all 0; service age is entered in descending order
+
+5)Enter a list, remove the duplicates in the list, and output in the original order!
+Input format:
+Enter the list on one line
+Output format:
+Output unique list elements in one line. Note: there is no space after the last element
+Input sample:
+[4,7,5,6,8,6,9,5]
+Sample output:
+4 7 5 6 8 9
+Test data: sample samples are equivalent; list elements are equal; list elements have multiple consecutive repetitions
+
+6)Combine two dictionaries into one dictionary. If the two dictionaries have the same key (key) respectively, the corresponding values need to be added together as the new value corresponding to the key in the dictionary.
+Input format:
+Enter the first dictionary string in the first line. Enter the second dictionary string in the second line. Note: The data types of the keys in the two input dictionaries must be the same, and they must all be numbers, otherwise they are all characters; the values in the dictionary are all numbers.
+Output format:
+Output the merged dictionary. The dictionary data is required to be arranged in descending order of keys. Note: The dictionary of this question cannot be output directly. You need to get the list of dictionary keys first, sort them, and then output the key-value pairs of the dictionary in a format.
+Input example 1:
+{1:3,2:5}
+{1:5,3:7}
+Output sample 1:
+{3:7,2:5,1:8}
+Input example 2:
+{'c':3,'a':4,'n':1}
+{'a':3,'c':7,'b':10}
+Output sample 2:
+{'n':1,'c':10,'b':10,'a':7}
+Test data: two, equivalent to the sample question

@@ -17,27 +17,27 @@ def filterFunc2(s):
   else:
     return True
 
-s_in = input()
+s_in = input() # +-P-xf4+-1!#
 
 s_temp = ""
 s_out = ""
 flag = False
 
-s_fil1 = filter(filterFunc1, s_in)
+s_fil1 = filter(filterFunc1, s_in) # {-, -, x, f, 4, -, 1}
 for c in s_fil1:
-  s_temp += c
+  s_temp = s_temp + c # --xf4-1
 
 if (s_temp[0] == "-"):
-  flag = True
+  flag = True # True negatif, False positif
 
-s_fil2 = filter(filterFunc2, s_temp)
+s_fil2 = filter(filterFunc2, s_temp) # {f, 4, 1}
 for c in s_fil2:
-  s_out += c
+  s_out += c # f41
 
 if (s_out == ""):
   print("0")
 else:
-  if (flag):
+  if (flag == True):
     print(int(s_out, 16)*-1)
   else:
     print(int(s_out, 16))
